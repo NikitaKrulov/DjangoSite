@@ -1,0 +1,172 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="google-site-verification" content="LIMWkNrbU4oK53luYm17kaRlOhiAkTEJXX00q9NFPxs" />
+    <meta name="yandex-verification" content="a415a232389bbc19" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+    <link rel="shortcut icon" href="{% static 'main/img/logo.png' %}" type="image/png">
+    <title>EcoLife</title>
+</head>
+<body>
+     <nav>
+        <div class="nav_container">
+            <div class="logo">
+                <a href="./index.html"><img src="{% static 'main/img/logo.png' %}" alt="logo"></a>
+            </div>
+            <div class="nav_links">
+                <a id="about_us_click">О нас</a>
+                <a href="./contacts.html">Контакты</a>
+                <a href="#product">Продукция</a>
+            </div>
+            <div class="cart_container">
+                <a href="./cart.html">Корзина</a>
+            </div>
+        </div>
+        <div class="burger">
+            <button id="burger_btn"><img src="{% static 'main/img/burger-bar.png' %}" alt="burger-bar"></button>
+            <div class="burger_menu">
+                <div class="burger_logo">
+                    <a href="./index.html"><img src="{% static 'main/img/logo.png' %}" alt="logo"></a>
+                </div>
+                <div class="burger_nav_links">
+                    <a id="burger_about_us_click">О нас</a>
+                    <a href="./contacts.html">Контакты</a>
+                    <a href="#product">Продукция</a>
+                </div>
+                <div class="burger_cart_container">
+                    <a href="./cart.html">Корзина</a>
+                </div>
+            </div>
+        </div>
+    </nav>  
+    <header>
+        <div class="content_header">
+            <div class="motto">
+                <div class="motto_text">
+                    <h1 class="center">EcoLife</h1>
+                    <h1>Зеленый Выбор</h1>
+                </div>
+            </div>
+            <img src="{% static '/main/img/_2c314fa4-89bc-4c05-89c8-1ffa735123e3.png' %}" alt="" class="img_on_bg">
+            <div class="social">
+                <a href="https://instagram.com" target="_blank"><img src="{% static '/main/img/instagram.png' %}" alt="insta"></a>
+                <a href="https://t.me/Nikitakrulov" target="_blank"><img src="{% static '/main/img/telegram.png' %}" alt="telegram"></a>
+                <a href="https://twitter.com" target="_blank"><img src="{% static '/main/img/x-twitter.svg' %}" alt="x"></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="about_us">
+            <div class="about_us-container">
+                <h2>О нас</h2>
+                <div class="about_us-container_flex">
+                    <div class="about_us-contant">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id. Praesent lorem orci, mattis non efficitur id, ultricies vel nibh. Sed volutpat lacus vitae gravida viverra. Fusce vel tempor elit. Proin tempus, magna id scelerisque vestibulum, nulla ex pharetra sapien, tempor posuere massa neque nec felis.</p>
+                    </div>
+                    <div class="about_us-contant">
+                        <img src="/media/Designer.png" alt="about_us">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="product">
+            <div class="bgc">
+                <div class="product">
+                    <h2>Продукция</h2>
+                    <div class="product_conatiner">
+                        <div class="card">
+                            <img src="/media/f8f3b7c421138e393766f863d8f19127.png" alt="t-shirt">
+                            <div class="card_text">
+                                <p class="notif">Осталось:&nbsp;&nbsp;180шт</p>
+                                <p class="title">Эко-посуда из бамбука</p>
+                                <p class="price"><span>Цена:</span>5000₽</p>
+                                <div class="line"></div>
+                                <p class="title_dicription">Описание:</p>
+                                <p class="dicription">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta ex itaque sapiente, laboriosam voluptas delectus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, vel!</p>
+                                <p class="title_dicription">Состав:</p>
+                                <p class="dicription">Бамбук - 100%</p>
+                                <a href="./productDetail-bamboo.html"><span>подробнее</span></a>
+                            </div>
+                        </div>
+                        <iframe name="my-iframe" style="display: none;"></iframe>
+                        <div class="card">
+                            <img src="/media/ECO FOOD.jpeg" alt="t-shirt">
+                            <div class="card_text">
+                                <p class="notif">Осталось:&nbsp;&nbsp;200шт</p>
+                                <p class="title">Банка полезной еды</p>
+                                <p class="price"><span>Цена:</span>1000₽</p>
+                                <div class="line"></div>
+                                <p class="title_dicription">Описание:</p>
+                                <p class="dicription">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta ex itaque sapiente, laboriosam voluptas delectus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, vel!</p>
+                                <p class="title_dicription">Состав:</p>
+                                <p class="dicription">Лимон,лайм,ананас,и много всего полезного</p>
+                                <a href="./productDetail-banka.html"><span>подробнее</span></a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="/media/ECO Tothbrush.jpeg" alt="t-shirt">
+                            <div class="card_text">
+                                <p class="notif">Осталось:&nbsp;&nbsp;90шт</p>
+                                <p class="title">Зубная щетка из Бамбука</p>
+                                <p class="title-2">И зубная паста</p>
+                                <p class="price"><span>Цена:</span>3000₽</p>
+                                <div class="line"></div>
+                                <p class="title_dicription">Описание:</p>
+                                <p class="dicription">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta ex itaque sapiente, laboriosam voluptas delectus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, vel!</p>
+                                <p class="title_dicription">Состав:</p>
+                                <p class="dicription">Бамбук - 90%,волокна бамбука и кукурузы,зубная паста из натуральных ингридентов</p>
+                                <a href="./productDetail-toothbrash.html"><span>подробнее</span></a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="/media/ECO Tea.jpeg" alt="t-shirt">
+                            <div class="card_text">
+                                <p class="notif">Осталось:&nbsp;&nbsp;10шт</p>
+                                <p class="title">Эко-набор для чая</p>
+                                <p class="price"><span>Цена:</span>10000₽</p>
+                                <div class="line"></div>
+                                <p class="title_dicription">Описание:</p>
+                                <p class="dicription">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta ex itaque sapiente, laboriosam voluptas delectus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, vel!</p>
+                                <p class="title_dicription">Состав:</p>
+                                <p class="dicription">Бамбук - 100%</p>
+                                <a href="./productDetail-tea.html"><span>подробнее</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer_all">
+            <div class="foot_container">
+                <div class="foot_logo">
+                    <img src="/media/logo.png" alt="logo">
+                </div>
+                <div class="foot_links">
+                    <a href="./contacts.html">Конаткты</a>
+                    <a href="./cart.html">Корзина</a>
+                    <a href="./ordered.php">Оформленные заказы</a>
+                </div>
+                <div class="foot_social">
+                    <div class="foot_socail_cont">
+                        <a href="mailto:">info@EcoLife.shop</a>
+                    </div>
+                    <div class="foot_socail_cont">
+                        <a href="https://instagram.com" target="_blank" class="foot_cont_img_social"><img src="/media/instagram.png" alt="insta"></a>
+                        <a href="https://t.me/Nikitakrulov" target="_blank" class="foot_cont_img_social"><img src="/media/telegram.png" alt="telegram"></a>
+                        <a href="https://twitter.com" target="_blank" class="foot_cont_img_social"><img src="/media/x-twitter.svg" alt="x"></a>
+                    </div>
+                </div>
+            </div>
+            <p>Официальный магазин EcoLife © 2024</p>
+            <a href="./textolite/index.html" class="admin" target="_blank">Перейти в админку для этой страницы</a>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="{% static '/main/js/script.js' %}"></script>
+</body>
+</html>
